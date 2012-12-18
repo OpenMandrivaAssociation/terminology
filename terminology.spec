@@ -6,9 +6,12 @@ License:	BSD
 Group:		Terminals
 URL:		http://www.enlightenment.org/
 Source:		http://download.enlightenment.org/releases/%{name}-%{version}.tar.bz2
+# Non-devel packages are needed to compile themes
+BuildRequires:	ecore
 BuildRequires:	eet
 BuildRequires:	edje
 BuildRequires:	elementary
+BuildRequires:	emotion
 BuildRequires:	pkgconfig(ecore)
 BuildRequires:	pkgconfig(edje)
 BuildRequires:	pkgconfig(eet)
