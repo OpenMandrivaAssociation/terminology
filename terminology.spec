@@ -5,7 +5,7 @@ Release:	1
 License:	BSD
 Group:		Terminals
 URL:		http://www.enlightenment.org/
-#Source:		http://download.enlightenment.org/releases/%{name}-%{version}.tar.bz2
+Source:		http://download.enlightenment.org/releases/%{name}-%{version}.tar.bz2
 BuildRequires:	edje
 BuildRequires:	pkgconfig(ecore)
 BuildRequires:	pkgconfig(edje)
