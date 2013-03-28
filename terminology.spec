@@ -1,6 +1,6 @@
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	0.2.0
+Version:	0.3.0
 Release:	1
 License:	BSD
 Group:		Terminals
@@ -20,11 +20,12 @@ BuildRequires:	pkgconfig(efreet)
 BuildRequires:	pkgconfig(eina)
 BuildRequires:	pkgconfig(elementary)
 BuildRequires:	pkgconfig(emotion)
+BuildRequires:	pkgconfig(ethumb_client)
 BuildRequires:	pkgconfig(evas)
 Requires:	edje
 Requires:	elementary
 Requires:	emotion
-
+Requires:	ethumb
 
 %description
 EFL Terminal Emulator.
