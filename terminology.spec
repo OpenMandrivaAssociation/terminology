@@ -43,6 +43,7 @@ EFL Terminal Emulator.
 %files
 %doc AUTHORS COPYING README
 %{_bindir}/%{name}
+%{_bindir}/ty*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 %{_datadir}/icons/%{name}.png
