@@ -44,6 +44,7 @@ EFL Terminal Emulator.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 %{_datadir}/icons/%{name}.png
+%{_mandir}/man1/%{name}.1.*
 
 #----------------------------------------------------------------------------
 
