@@ -1,4 +1,5 @@
 removed_sources:
   terminology-0.4.0.tar.bz2: 6003519484ba2f50487bc1f6b977564f60bcc1fc
-sources:
   terminology-0.5.0.tar.bz2: 9d072dc38a8884ec15b3cb2827f0b2a9bd574ad4
+sources:
+  terminology-0.8.0.tar.xz: 917cd21afdab9464e4f4f87443f16a0a0ec6a10a
