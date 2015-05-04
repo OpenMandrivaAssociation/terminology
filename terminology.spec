@@ -1,11 +1,11 @@
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	0.5.0
-Release:	1
+Version:	0.8.0
+Release:	0.1
 License:	BSD
 Group:		Terminals
-URL:		http://www.enlightenment.org/
-Source:		http://download.enlightenment.org/rel/apps/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://www.enlightenment.org/
+Source:		https://download.enlightenment.org/rel/apps/%{name}/%{name}-%{version}.tar.xz
 # Non-devel packages are needed to compile themes
 BuildRequires:	e
 BuildRequires:	ecore
@@ -45,6 +45,7 @@ EFL Terminal Emulator.
 %{_datadir}/%{name}
 %{_datadir}/icons/%{name}.png
 %{_mandir}/man1/%{name}.1.*
+%{_localedir}*
 
 #----------------------------------------------------------------------------
 
@@ -58,3 +59,4 @@ EFL Terminal Emulator.
 %install
 %makeinstall_std
 
+%find_lang %{name}
