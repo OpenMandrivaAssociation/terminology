@@ -45,6 +45,7 @@ EFL Terminal Emulator.
 %{_datadir}/%{name}
 %{_datadir}/icons/%{name}.png
 %{_mandir}/man1/%{name}.1.*
+%{_localedir}*
 
 #----------------------------------------------------------------------------
 
@@ -58,3 +59,4 @@ EFL Terminal Emulator.
 %install
 %makeinstall_std
 
+%find_lang %{name}
