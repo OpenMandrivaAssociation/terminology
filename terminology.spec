@@ -13,7 +13,7 @@ BuildRequires:	e
 #BuildRequires:	eet
 #BuildRequires:	edje
 #BuildRequires:	elementary
-#BuildRequires:	emotion
+BuildRequires:  meson
 BuildRequires:	pkgconfig(ecore) => %{efl_version}
 BuildRequires:	pkgconfig(ecore-evas) => %{efl_version}
 BuildRequires:	pkgconfig(ecore-file) => %{efl_version}
