@@ -1,7 +1,7 @@
-%define	efl_version 1.19.1
+%define	efl_version 1.21.1
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	1.0.0
+Version:	1.3.2
 Release:	1
 License:	BSD
 Group:		Terminals
@@ -43,12 +43,20 @@ Requires:	ethumb => %{efl_version}
 EFL Terminal Emulator.
 
 %files
-%doc AUTHORS COPYING README
+%doc AUTHORS COPYING
 %{_bindir}/%{name}
 %{_bindir}/ty*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
-%{_datadir}/icons/%{name}.png
+%{_datadir}/man/man1/terminology-helpers.1.xz
+%{_datadir}/man/man1/tyalpha.1.xz
+%{_datadir}/man/man1/tybg.1.xz
+%{_datadir}/man/man1/tycat.1.xz
+%{_datadir}/man/man1/tyls.1.xz
+%{_datadir}/man/man1/typop.1.xz
+%{_datadir}/man/man1/tyq.1.xz
+%{_datadir}/man/man1/tysend.1.xz
+%{_datadir}/icons/hicolor/128x128/apps/%{name}.png
 %{_mandir}/man1/%{name}.1.*
 %{_localedir}*
 
@@ -57,11 +65,13 @@ EFL Terminal Emulator.
 %prep
 %setup -q
 
+%meson
+
 %build
-%configure2_5x
-%make
+%meson_build
+
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name}
