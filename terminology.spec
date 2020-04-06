@@ -1,7 +1,7 @@
-%define	efl_version 1.21.1
+%define	efl_version 1.23.3
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	1.3.2
+Version:	1.6.0
 Release:	1
 License:	BSD
 Group:		Terminals
@@ -9,10 +9,6 @@ URL:		https://www.enlightenment.org/
 Source:		https://download.enlightenment.org/rel/apps/%{name}/%{name}-%{version}.tar.xz
 # Non-devel packages are needed to compile themes
 BuildRequires:	e
-#BuildRequires:	ecore
-#BuildRequires:	eet
-#BuildRequires:	edje
-#BuildRequires:	elementary
 BuildRequires:  meson
 BuildRequires:	pkgconfig(ecore) => %{efl_version}
 BuildRequires:	pkgconfig(ecore-evas) => %{efl_version}
@@ -48,15 +44,15 @@ EFL Terminal Emulator.
 %{_bindir}/ty*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
-%{_datadir}/man/man1/terminology-helpers.1.xz
-%{_datadir}/man/man1/tyalpha.1.xz
-%{_datadir}/man/man1/tybg.1.xz
-%{_datadir}/man/man1/tycat.1.xz
-%{_datadir}/man/man1/tyls.1.xz
-%{_datadir}/man/man1/typop.1.xz
-%{_datadir}/man/man1/tyq.1.xz
-%{_datadir}/man/man1/tysend.1.xz
-%{_datadir}/icons/hicolor/128x128/apps/%{name}.png
+%{_datadir}/man/man1/terminology-helpers.1.*
+%{_datadir}/man/man1/tyalpha.1.*
+%{_datadir}/man/man1/tybg.1.*
+%{_datadir}/man/man1/tycat.1.*
+%{_datadir}/man/man1/tyls.1.*
+%{_datadir}/man/man1/typop.1.*
+%{_datadir}/man/man1/tyq.1.*
+%{_datadir}/man/man1/tysend.1.*
+%{_datadir}/icons/hicolor/*x*/apps/%{name}.png
 %{_mandir}/man1/%{name}.1.*
 %{_localedir}*
 
@@ -69,7 +65,6 @@ EFL Terminal Emulator.
 
 %build
 %meson_build
-
 
 %install
 %meson_install
