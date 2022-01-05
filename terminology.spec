@@ -14,10 +14,7 @@ BuildRequires:	pkgconfig(efl) => %{efl_version}
 Conflicts:	evas_generic_loaders <= 1.13.2
 Conflicts:	pm-utils
 Requires:	efl => %{efl_version}
-Requires:	edje => %{efl_version}
-Requires:	elementary => 0.21.7
-Requires:	emotion => %{efl_version}
-Requires:	ethumb => %{efl_version}
+Requires:	e
 
 %description
 EFL Terminal Emulator.
