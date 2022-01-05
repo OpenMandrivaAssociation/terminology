@@ -1,7 +1,7 @@
-%define	efl_version 1.24.3
+%define	efl_version 1.26.1
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	1.8.1
+Version:	1.12.1
 Release:	1
 License:	BSD
 Group:		Terminals
@@ -10,22 +10,6 @@ Source:		https://download.enlightenment.org/rel/apps/%{name}/%{name}-%{version}.
 # Non-devel packages are needed to compile themes
 BuildRequires:	e
 BuildRequires:  meson
-BuildRequires:	pkgconfig(ecore) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-evas) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-file) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-imf) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-imf-evas) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-input) => %{efl_version}
-BuildRequires:	pkgconfig(ecore-ipc) => %{efl_version}
-BuildRequires:	pkgconfig(edje) => %{efl_version}
-BuildRequires:	pkgconfig(eet) => %{efl_version}
-BuildRequires:	pkgconfig(efreet) => %{efl_version}
-BuildRequires:	pkgconfig(eina) => %{efl_version}
-BuildRequires:	pkgconfig(eldbus) => %{efl_version}
-BuildRequires:	pkgconfig(elementary) => 0.21.7
-BuildRequires:	pkgconfig(emotion) => %{efl_version}
-BuildRequires:	pkgconfig(ethumb_client) => %{efl_version}
-BuildRequires:	pkgconfig(evas) => %{efl_version}
 BuildRequires:	pkgconfig(efl) => %{efl_version}
 Conflicts:	evas_generic_loaders <= 1.13.2
 Conflicts:	pm-utils
