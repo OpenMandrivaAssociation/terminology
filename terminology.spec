@@ -35,7 +35,7 @@ EFL Terminal Emulator.
 %{_datadir}/man/man1/tysend.1.*
 %{_datadir}/icons/hicolor/*x*/apps/%{name}.png
 %{_mandir}/man1/%{name}.1.*
-%{_localedir}*
+#{_localedir}*
 
 #----------------------------------------------------------------------------
 
