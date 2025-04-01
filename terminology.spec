@@ -1,7 +1,7 @@
 %define	efl_version 1.26.1
 Summary:	EFL Terminal Emulator
 Name:		terminology
-Version:	1.13.0
+Version:	1.14.0
 Release:	1
 License:	BSD
 Group:		Terminals
