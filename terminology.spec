@@ -40,7 +40,7 @@ EFL Terminal Emulator.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %meson
 
@@ -50,4 +50,4 @@ EFL Terminal Emulator.
 %install
 %meson_install
 
-%find_lang %{name}
+#find_lang %{name}
