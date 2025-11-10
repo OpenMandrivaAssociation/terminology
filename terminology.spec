@@ -2,7 +2,7 @@
 Summary:	EFL Terminal Emulator
 Name:		terminology
 Version:	1.14.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Terminals
 URL:		https://www.enlightenment.org/
